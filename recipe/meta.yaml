@@ -1,13 +1,13 @@
 {% set name = "gemgis" %}
-{% set version = "1.1.8" %}
+{% set version = "1.1.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GemGIS-{{ version }}.tar.gz
-  sha256: 4b993443655fe2c676239f002ff1cbc19b47e0c0d3a241adcfe08c965c876c7d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: cfb825694fc4053c97662c66390bbdbd864b30354295a01d69c24f946e8be711
 
 build:
   noarch: python
@@ -39,8 +39,8 @@ about:
   license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE
-  summary: GemGIS is a Python-based, open-source spatial data processing library. It is capable of preprocessing spatial data such as vector data raster data, data obtained from online services and many more data formats. GemGIS wraps and extends the functionality of packages known to the geo-community such as GeoPandas,
-    Rasterio, OWSLib, Shapely, PyVista, Pandas, and NumPy.
+  summary: GemGIS is a Python-based, open-source spatial data processing library. It is capable of preprocessing spatial data such as vector data raster data, data obtained from online services and many more data formats. GemGIS wraps and extends the functionality of packages known to the geo-community such as 
+    GeoPandas, Rasterio, OWSLib, Shapely, PyVista, Pandas, and NumPy.
   doc_url: https://gemgis.readthedocs.io/en/latest
   dev_url: https://github.com/cgre-aachen/gemgis
 
